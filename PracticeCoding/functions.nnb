@@ -1,0 +1,196 @@
+{
+    "cells": [
+        {
+            "language": "markdown",
+            "source": [
+                "# Functions in Javascript"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Function"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function helloFunc(name){\r\n    return `Hello ${name}`;\r\n}\r\n\r\nconsole.log(helloFunc('Sehrish'));"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "Hello Sehrish",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Function Expressions"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "const sum = function(a, b){\r\n    return a + b;\r\n}\r\n\r\nconsole.log(sum(2,3));"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "5",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Functions as Variables"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "// check if first number is multiple of second number\r\nconst multiple = function(a, b){\r\n    if (a%b ===0 && b !== 0 && a>b){\r\n        return `${a} is a multiple of ${b}!`;\r\n    }\r\n    else if (a<b) {\r\n        return `a must be greater than b!`;\r\n    }\r\n    else if (a%b !==0 && b !== 0 && a>b) {\r\n        return `${a} is not a multiple of ${b}!`;\r\n    }\r\n    else {\r\n        return `Enter a valid value!`;\r\n    }\r\n}\r\n// function call\r\nconsole.log(multiple(10, 3));\r\nconsole.log(multiple(10, 2));\r\nconsole.log(multiple(10, 5));\r\nconsole.log(multiple(10, 0.5));\r\nconsole.log(multiple(1, 10));\r\nconsole.log(multiple(1, 0));\r\nconsole.log(multiple(0, 7));"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "10 is not a multiple of 3!",
+                                "10 is a multiple of 2!",
+                                "10 is a multiple of 5!",
+                                "10 is a multiple of 0.5!",
+                                "a must be greater than b!",
+                                "Enter a valid value!",
+                                "a must be greater than b!",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Function - Fabonacci Series\r\n\r\n- Every next digit is sum of previous two"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "limit = 50;\r\na = 0;\r\nb = 1;\r\nfor (i=1; a<=limit; i++){\r\n    console.log(a);\r\n    let temp = a + b;\r\n    a = b;\r\n    b = temp;\r\n}"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0",
+                                "1",
+                                "1",
+                                "2",
+                                "3",
+                                "5",
+                                "8",
+                                "13",
+                                "21",
+                                "34",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function fabonacci(limit){\r\n    a = 0;\r\n    b = 1;\r\n    for (i=1; a<=limit; i++){\r\n        console.log(a);\r\n        let temp = a + b;\r\n        a = b;\r\n        b = temp;\r\n    }\r\n}\r\n\r\nconsole.log(fabonacci(50));"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "0",
+                                "1",
+                                "1",
+                                "2",
+                                "3",
+                                "5",
+                                "8",
+                                "13",
+                                "21",
+                                "34",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "markdown",
+            "source": [
+                "## Function - Factorial\r\n\r\n- Product of all positive integers less than or equal to that number"
+            ],
+            "outputs": []
+        },
+        {
+            "language": "javascript",
+            "source": [
+                "function factorial(num){\r\n    let fact = 1;\r\n    for(let i=1; i<=num; i++){\r\n        fact = fact * i;\r\n    }\r\n    return fact;\r\n}\r\n\r\n// function call\r\nconsole.log(factorial(0));\r\nconsole.log(factorial(1));\r\nconsole.log(factorial(2));\r\nconsole.log(factorial(3));\r\nconsole.log(factorial(4));\r\nconsole.log(factorial(5));\r\nconsole.log(factorial(6));\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "1",
+                                "1",
+                                "2",
+                                "6",
+                                "24",
+                                "120",
+                                "720",
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
