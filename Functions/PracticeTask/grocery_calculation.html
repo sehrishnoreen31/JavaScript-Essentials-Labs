@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grocery</title>
+</head>
+<body>
+
+    <h1>Grocery Price Calculation</h1>
+
+    <!-- take input -->
+     <label for="grocery1">Enter an item price:</label><br>
+     <input type="number" name="g1" id="g1" min="0" placeholder="item1">
+     <br><br>
+     <label for="grocery1">Enter an item price:</label><br>
+     <input type="number" name="g2" id="g2" min="0" placeholder="item2">
+     <br><br>
+     <label for="grocery1">Enter an item price:</label><br>
+     <input type="number" name="g3" id="g3" min="0" placeholder="item3">
+     <br><br>
+
+    <!-- calculte total -->
+    <button onclick="calculateTotalPrice()">Calculate Total Price</button>
+
+    <!-- Show Total price -->
+     <p class="total" id="total"></p>
+
+     <script src="grocery_calculation.js"></script>
+    
+</body>
+</html>
