@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form to calculate area of rectangle -->
+    <h1>Rectangle Area Calculations</h1>
+    
+    <!-- Get input length -->
+    <label for="length">Enter Length:</label><br>
+    <input type="number" name="length" id="length" min="0">
+    <br><br>
+
+    <!-- get input width -->
+    <label for="width">Enter Width:</label><br>
+    <input type="number" name="width" id="width" min="0">
+    <br><br>
+
+    <!-- calculate results -->
+    <button onclick="calculateArea()">Calculate Area</button>
+    <br>
+
+    <!-- Show results -->
+    <p class="result" id="result"></p>
+
+    <script src="calculate_area.js">
+
+    </script>
+</body>
+</html>
