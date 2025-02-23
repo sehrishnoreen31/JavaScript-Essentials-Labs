@@ -28,7 +28,6 @@ function myfunction(){
     var myVarFunc = "var variable - function";
     const myConstFunc = "const variable - function";
 }
-
 myfunction();
 // printing
 console.log(myLetFunc);
