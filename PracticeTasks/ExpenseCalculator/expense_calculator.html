@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+    <div class="app-container">
+        <h1 class="header" id="header">Expense Calculator</h1>
+
+        <!-- Categories -->
+        <div class="container">
+            <div class="catg" id="grocery">
+                <h2 class="cat-header">Grocery</h2>
+                <label for="g1">Grocery Item 1: </label>
+                <br>
+                <input type="number" min="0" name="g1" id="g1">
+                <br>
+                <label for="g2">Grocery Item 2: </label>
+                <br>
+                <input type="number" min="0" name="g2" id="g2">
+                <br>
+                <label for="g3">Grocery Item 3: </label>
+                <br>
+                <input type="number" min="0" name="g3" id="g3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-grocery">0</p>
+            </div>
+
+            <div class="catg" id="clothes">
+                <h2 class="cat-header">Clothes</h2>
+                <label for="c1">Cloth Item 1: </label><br>
+                <input type="number" min="0" name="c1" id="c1">
+                <br>
+                <label for="c2">Cloth Item 2: </label><br>
+                <input type="number" min="0" name="c2" id="c2">
+                <br>
+                <label for="c3">Cloth Item 3: </label><br>
+                <input type="number" min="0" name="c3" id="c3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-clothes">0</p>
+            </div>
+
+            <div class="catg" id="shoes">
+                <h2 class="cat-header">Shoes</h2>
+                <label for="s1">Shoes Item 1: </label>
+                <br>
+                <input type="number" min="0" name="" id="">
+                <br>
+                <label for="s2">Shoes Item 2: </label>
+                <br>
+                <input type="number" min="0" name="s2" id="s2">
+                <br>
+                <label for="s3">Shoes Item 3: </label>
+                <br>
+                <input type="number" min="0" name="s3" id="s3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-shoes">0</p>
+            </div>
+
+            <div class="catg" id="bills">
+                <h2 class="cat-header">Bills</h2>
+                <label for="b1">Bill 1: </label>
+                <br>
+                <input type="number" min="0" name="" id="">
+                <br>
+                <label for="b2">Bill 2: </label>
+                <br>
+                <input type="number" min="0" name="b2" id="b2">
+                <br>
+                <label for="b3">Bill 3: </label>
+                <br>
+                <input type="number" min="0" name="b3" id="b3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-bills">0</p>
+            </div>
+
+            <div class="catg" id="stationary">
+                <h2 class="cat-header">Stationary</h2>
+                <label for="s1">Stationary Item 1: </label><br>
+                <input type="number" min="0" name="s1" id="s1">
+                <br>
+                <label for="s2">Stationary Item 2: </label><br>
+                <input type="number" min="0" name="s2" id="s2">
+                <br>
+                <label for="s3">Stationary Item 3: </label><br>
+                <input type="number" min="0" name="s3" id="s3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-stationary">0</p>
+            </div>
+
+            <div class="catg" id="Others">
+                <h2 class="cat-header">Others</h2>
+                <label for="o1">Item 1: </label><br>
+                <input type="number" min="0" name="o1" id="o1">
+                <br>
+                <label for="o2">Item 2: </label><br>
+                <input type="number" min="0" name="o2" id="o2">
+                <br>
+                <label for="o3">Item 3: </label><br>
+                <input type="number" min="0" name="o" id="o3">
+                <br>
+                <button>Calculate Total Price</button>
+                <p class="total" id="total-stationary">0</p>
+            </div>
+        </div>
+
+        <hr>
+        <!-- total expense -->
+        <div class="grand-total" id="grand-total">
+            <h2>Grand Total</h2>
+            <p class="g-total" id="g-total">0</p>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
