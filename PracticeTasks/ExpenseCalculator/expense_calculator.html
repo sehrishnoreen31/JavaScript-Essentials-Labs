@@ -26,7 +26,7 @@
                 <br>
                 <input type="number" min="0" name="g3" id="g3">
                 <br>
-                <button>Calculate Total Price</button>
+                <button onclick="calculateGroceryExpenses()">Calculate Total Price</button>
                 <p class="total" id="total-grocery">0</p>
             </div>
 
@@ -41,7 +41,7 @@
                 <label for="c3">Cloth Item 3: </label><br>
                 <input type="number" min="0" name="c3" id="c3">
                 <br>
-                <button>Calculate Total Price</button>
+                <button onclick="calculateClothesExpenses()">Calculate Total Price</button>
                 <p class="total" id="total-clothes">0</p>
             </div>
 
@@ -49,7 +49,7 @@
                 <h2 class="cat-header">Shoes</h2>
                 <label for="s1">Shoes Item 1: </label>
                 <br>
-                <input type="number" min="0" name="" id="">
+                <input type="number" min="0" name="s1" id="s1">
                 <br>
                 <label for="s2">Shoes Item 2: </label>
                 <br>
@@ -59,7 +59,7 @@
                 <br>
                 <input type="number" min="0" name="s3" id="s3">
                 <br>
-                <button>Calculate Total Price</button>
+                <button onclick="calculateShoesExpenses()">Calculate Total Price</button>
                 <p class="total" id="total-shoes">0</p>
             </div>
 
@@ -67,7 +67,7 @@
                 <h2 class="cat-header">Bills</h2>
                 <label for="b1">Bill 1: </label>
                 <br>
-                <input type="number" min="0" name="" id="">
+                <input type="number" min="0" name="b1" id="b1">
                 <br>
                 <label for="b2">Bill 2: </label>
                 <br>
@@ -77,22 +77,22 @@
                 <br>
                 <input type="number" min="0" name="b3" id="b3">
                 <br>
-                <button>Calculate Total Price</button>
+                <button onclick="calculateBills()">Calculate Total Price</button>
                 <p class="total" id="total-bills">0</p>
             </div>
 
             <div class="catg" id="stationary">
                 <h2 class="cat-header">Stationary</h2>
                 <label for="s1">Stationary Item 1: </label><br>
-                <input type="number" min="0" name="s1" id="s1">
+                <input type="number" min="0" name="st1" id="st1">
                 <br>
                 <label for="s2">Stationary Item 2: </label><br>
-                <input type="number" min="0" name="s2" id="s2">
+                <input type="number" min="0" name="st2" id="st2">
                 <br>
                 <label for="s3">Stationary Item 3: </label><br>
-                <input type="number" min="0" name="s3" id="s3">
+                <input type="number" min="0" name="st3" id="st3">
                 <br>
-                <button>Calculate Total Price</button>
+                <button onclick="calculateStationaryExpenses()">Calculate Total Price</button>
                 <p class="total" id="total-stationary">0</p>
             </div>
 
@@ -105,21 +105,25 @@
                 <input type="number" min="0" name="o2" id="o2">
                 <br>
                 <label for="o3">Item 3: </label><br>
-                <input type="number" min="0" name="o" id="o3">
+                <input type="number" min="0" name="o3" id="o3">
                 <br>
-                <button>Calculate Total Price</button>
-                <p class="total" id="total-stationary">0</p>
+                <button onclick="calculateOtherExpenses()">Calculate Total Price</button>
+                <p class="total" id="total-others">0</p>
             </div>
         </div>
 
         <hr>
+        <h3>Summary of Calculations</h3>
+        <p class="summary" id="summary">Summary will be displayed here!</p>
+        <hr>
         <!-- total expense -->
         <div class="grand-total" id="grand-total">
             <h2>Grand Total</h2>
-            <p class="g-total" id="g-total">0</p>
+            <p on class="g-total" id="g-total">0</p>
         </div>
         
     </div>
     
+    <script src="expense_calculator.js"></script>
 </body>
 </html>
