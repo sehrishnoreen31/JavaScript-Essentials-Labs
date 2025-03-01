@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    padding: 10px;
+    
+    & main{
+        margin: 10px auto;
+        padding: 10px;
+        max-width: 500px;
+        background-color: #faf5e6;
+        & h1{
+            color: #A31D1D;
+            margin: 5px 0;
+            padding: 5px;
+        }
+        & .container{
+            margin: 10px auto;
+            padding: 10px;
+            max-width: 100%;
+            & h2{
+                color: #D84040;
+                padding: 5px 0;
+            }
+            & label{
+                color: #853f2a;
+                padding: 10px;
+                margin: 5px 0;
+                width: inherit;
+                font-size: 16px;
+            }
+            & input{
+                color: #2C3930;
+                font-size: 15px;
+                margin: 5px;
+                padding: 5px;
+                outline: none;
+                border-radius: 50px;
+                border-color: transparent;
+                background-color: #F1E3D3;
+                max-width: 90%;
+                &:focus{
+                    background-color: #F1E3D3 !important;
+                }
+            }
+            & select{
+                background-color: #F1E3D3;
+                border-radius: 50px;
+                border-color: transparent;
+                outline: none;
+                padding: 2px 5px;
+                margin: 5px 0;
+                & option{
+                    background-color: #ffffff;
+                    &:hover{
+                        background-color: #853f2a;
+                        color: #ffffff;
+                    }
+                }
+            }
+            & textarea{
+                max-width: 90%;
+                border-radius: 10px;
+                border-color: transparent;
+                outline: none;
+                padding: 5px 10px;
+                margin: 5px 0;
+                background-color: #F1E3D3;
+                font-size: 15px;
+            }
+            & button{
+                background-color: #A31D1D;
+                color: #F8F2DE;
+                font-size: 15px;
+                font-weight: 600;
+                padding: 5px 10px;
+                border-color: transparent;
+                border-radius: 50px;
+            }
+        }
+        & .user-info{
+            margin: 10px auto;
+            padding: 10px;
+            max-width: 100%;
+            & h2{
+                color: #D84040;
+                padding: 5px 0;
+            }
+            & p{
+                padding: 5px;
+                font-weight: 600;
+                & span{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -9,37 +9,43 @@
 <body>
     <main>
         <h1>Welcome To Luxury Brand Products Feedback!</h1>
+        <!-- form -->
         <section class="container">
             <h2>Provide Your Feedback</h2>
 
-            <label for="name">Name:</label>
+            <label for="name">Name:</label><br>
             <input type="text" name="name" id="name" placeholder="Your name" required><br>
 
-            <label for="age">Age:</label>
-            <input type="number" name="age" id="age" placeholder="Your age" required><br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age" min="0" placeholder="Your age" required><br>
 
-            <label for="email">Email:</label>
+            <label for="email">Email:</label><br>
             <input type="email" name="email" id="email" placeholder="Your email" required><br>
 
-            <label for="job">Job:</label>
+            <label for="job">Job:</label><br>
             <input type="text" name="job" id="job" placeholder="Your job" required><br>
 
-            <label for="designation">Designation:</label>
+            <label for="designation">Designation:</label><br>
             <input type="text" name="designation" id="designation" placeholder="Your designation" required><br>
 
-            <label for="productType">Product Type:</label>
+            <label for="productType">Product Type:</label><br>
             <select name="productType" id="productType" required>
+                <option value="">Select</option>
                 <option value="perfume">Perfume</option>
                 <option value="oil">Oil</option>
                 <option value="cream">Cream</option>
             </select><br>
 
-            <label for="feedback">Feedback:</label>
+            <label for="feedback">Feedback:</label><br>
             <textarea name="feedback" id="feedback" rows="5" cols="30" placeholder="Enter your feedback here"></textarea><br>
 
-            <button id="submit-btn" type="submit">Submit Feedback</button>
+            <label for="experience">Experience:</label><br>
+            <textarea name="experience" id="experience" rows="5" cols="30" placeholder="Enter your product experience here"></textarea><br>
+
+            <button id="submit-btn">Submit Feedback</button>
         </section>
 
+        <!-- User Information -->
         <section class="user-info" id="user-info" style="display: none;">
             <h2>User information:</h2>
             <p>Name: <span id="user-name"></span></p>
@@ -48,6 +54,7 @@
             <p>Job: <span id="user-job"></span></p>
             <p>Designation: <span id="user-designation"></span></p>
             <p>Feedback for: <span id="product-choice"></span>: <span id="user-feedback"></span></p>
+            <p>Experience: <span id="user-experience"></span></p>
         </section>
     </main>
 
