@@ -12,18 +12,18 @@
         <section class="container">
             <h2>Add New Book</h2>
             <label for="book-name">Book Name:</label><br>
-            <input type="text" name="book-name" id="book-name"><br>
+            <input type="text" name="book-name" id="book-name" required><br>
             <label for="author-name">Author Name:</label><br>
-            <input type="text" name="author-name" id="author-name"><br>
+            <input type="text" name="author-name" id="author-name" required><br>
             <label for="book-description">Book Description:</label><br>
-            <input type="text" name="book-description" id="book-description"><br>
+            <input type="text" name="book-description" id="book-description" required><br>
             <label for="pages-number">Number of Pages:</label><br>
-            <input type="number" name="pages-number" id="pages-number"><br>
-            <button onclick="addBook()">Add Book</button>
+            <input type="number" name="pages-number" id="pages-number" required><br>
+            <button onclick="addBooks()">Add Book</button>
         </section>
-        <section class="display">
+        <section class="display" id="display">
             <h2>Books</h2>
-            <div class="books">Books will be displayed here!</div>
+            <div class="books" id="books">Books will be displayed here!</div>
         </section>
     </main>
 

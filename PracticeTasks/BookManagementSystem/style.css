@@ -23,6 +23,7 @@ body{
             padding: 20px;
             border-radius: 10px;
             box-shadow: 3px 3px 2px  #615656;
+            max-height: fit-content;
             & h2{
                 color: #3f3030;
                 text-align: center;
