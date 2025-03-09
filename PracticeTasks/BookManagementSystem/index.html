@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMS</title>
+</head>
+<body>
+    <main>
+        <h1>Book Management System</h1>
+        <section class="container">
+            <label for="book-name">Book Name:</label><br>
+            <input type="text" name="book-name" id="book-name"><br>
+            <label for="author-name">Author Name:</label><br>
+            <input type="text" name="author-name" id="author-name"><br>
+            <label for="book-description">Book Description:</label><br>
+            <input type="text" name="book-description" id="book-description"><br>
+            <label for="pages-number">Number of Pages:</label><br>
+            <input type="number" name="pages-number" id="pages-number"><br>
+            <button onclick="addBook()">Add Book</button>
+        </section>
+        <section class="display">
+            <h2>Books</h2>
+            <div class="books">Books will be displayed here!</div>
+        </section>
+    </main>
+
+    <script src="books.js"></script>
+</body>
+</html>
